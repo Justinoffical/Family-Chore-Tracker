@@ -1,0 +1,122 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  h1, h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+  }
+  
+
+  
+  footer {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Media queries */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    nav a {
+      display: block;
+      margin: 0.5em 0;
+    }
+  }
+  
+  body {
+    background-image: url('img/grey.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: clean 10s ease-in-out infinite;
+  }
+  
+  @keyframes clean {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  
+  #historyList li {
+    background-color: #4b4a4a;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  #historyList li:nth-child(odd) {
+    background-color: #4b4a4a;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  #historyList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  #historyList li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .container h1 {
+    font-family: cursive;
+    color: #fdfdfd;
+  }
+  
+  #historyList {
+    font-family: cursive;
+    color: #ffffff;
+  }
+  
+  

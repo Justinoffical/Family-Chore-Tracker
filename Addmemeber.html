@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Chore Tracker</title>
+    <link rel="stylesheet" href="Addmember.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Family Chore Tracker</h1>
+        <div class="menu">
+          <a href="task.html">Task</a>
+          <a href="Leaderboard.html">Leaderboard</a>
+          <a href="Addtask.html">Add task</a>
+          <a href="Addmemeber.html">Add member</a>
+          <a href="History.html">History</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Form to add new tasks -->
+    <form id="addUserForm"style="text-align:center;">
+      <label for="name">User Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <button type="submit">Add Task</button>
+    </form>
+    <footer>
+      <p>&copy; 2023 Family Chore Tracker</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="Addmemeber.js"></script>    
+  </body>
+</html>

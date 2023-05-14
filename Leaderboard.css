@@ -1,0 +1,163 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  h1, h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+  }
+  h3 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family:cursive;
+    color:#fff;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Media queries */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    nav a {
+      display: block;
+      margin: 0.5em 0;
+    }
+  }
+  /* Set background color and add padding to main section */
+
+  
+body {
+  background-image: url('img/grey.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: clean 10s ease-in-out infinite;
+}
+
+@keyframes clean {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  #users {
+    display: none;
+  }
+  /* Define some common styles for the leaderboard */
+.report {
+  padding: 2rem;
+}
+
+.report h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #ddd;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Style the leaderboard table */
+#detail-report table {
+  margin-top: 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the top row of the table */
+#detail-report table tr:first-child {
+  background-color: #eee;
+  font-family: cursive;
+}
+
+/* Style the table data cells */
+#detail-report table td {
+  font-weight: bold;
+  font-family: cursive;
+}
+
+/* Style the first data cell in each row */
+#detail-report table td:first-child {
+  font-weight: normal;
+  font-family: cursive;
+}
+
+/* Style the top three rows of the table with different colors */
+#detail-report table tr:nth-child(1) {
+  background-color: #ffd700;
+}
+
+#detail-report table tr:nth-child(2) {
+  background-color: #c0c0c0;
+}
+
+#detail-report table tr:nth-child(3) {
+  background-color: #cd7f32;
+}
+
+
+
+  
